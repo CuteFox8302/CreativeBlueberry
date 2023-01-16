@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "creativeblueberry",
+  "version": "${version}",
+  "name": "Creative Blueberry",
+  "description": "Adds a blueberry which is only accessible in creative.",
+  "authors": [
+    "_CuteFox_"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT License",
+  "icon": "assets/creativeblueberry/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.cutefox.creativeblueberry.CreativeBlueberry"
+    ],
+    "client": [
+      "net.cutefox.creativeblueberry.CreativeBlueberryClient"
+    ],
+    "fabric-datagen": [
+      "net.cutefox.creativeblueberry.CreativeBlueberryDataGenerator"
+    ]
+  },
+  "mixins": [
+    "creativeblueberry.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "minecraft": "~1.19.3",
+    "java": ">=17",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
